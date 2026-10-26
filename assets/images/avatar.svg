@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4a9ff" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+    <radialGradient id="avatarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bfa6ff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e4d9ff" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#bfa6ff" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="200" r="140" fill="url(#avatarGlow)" filter="url(#softGlow)" />
+
+  <!-- Outer Orbit Ring -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" stroke-dasharray="6,8" opacity="0.4" />
+  
+  <!-- Secondary Orbit Ring -->
+  <circle cx="200" cy="200" r="148" fill="none" stroke="#bfa6ff" stroke-width="1" opacity="0.2" />
+
+  <!-- Inner Glass Container -->
+  <circle cx="200" cy="200" r="130" fill="#131022" stroke="url(#ringGrad)" stroke-width="2" />
+  
+  <!-- Subtle Gradient Background inside -->
+  <circle cx="200" cy="200" r="126" fill="url(#avatarGrad)" opacity="0.15" />
+
+  <!-- Stylized Monogram / Tech & Design Emblem -->
+  <!-- Subtle decorative code brackets -->
+  <path d="M 120 170 L 105 195 L 120 220" fill="none" stroke="#bfa6ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" />
+  <path d="M 280 170 L 295 195 L 280 220" fill="none" stroke="#bfa6ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" />
+
+  <!-- Monogram "AB" -->
+  <g transform="translate(200, 195)" text-anchor="middle">
+    <!-- Stylized Geometric Central Icon / Letters -->
+    <text y="18" fill="url(#avatarGrad)" font-family="'Syne', sans-serif" font-size="76" font-weight="800" letter-spacing="-2">AB</text>
+  </g>
+
+  <!-- Floating Sparkles / Stars -->
+  <path d="M 290,105 Q 290,115 300,115 Q 290,115 290,125 Q 290,115 280,115 Q 290,115 290,105 Z" fill="#e4d9ff" opacity="0.9" />
+  <path d="M 100,285 Q 100,292 107,292 Q 100,292 100,299 Q 100,292 93,292 Q 100,292 100,285 Z" fill="#bfa6ff" opacity="0.8" />
+  <circle cx="310" cy="260" r="3" fill="#c4a9ff" opacity="0.7" />
+  <circle cx="95" cy="130" r="2.5" fill="#c4a9ff" opacity="0.7" />
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#110d21" />
+      <stop offset="50%" stop-color="#0a0814" />
+      <stop offset="100%" stop-color="#1a1236" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bfa6ff" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.0" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#c4a9ff" />
+      <stop offset="100%" stop-color="#e4d9ff" />
+    </linearGradient>
+    <radialGradient id="glowOrb3" cx="65%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softBlur3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="35" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad3)" rx="16" />
+
+  <!-- Ambient Glow -->
+  <circle cx="550" cy="200" r="170" fill="url(#glowOrb3)" filter="url(#softBlur3)" />
+  <circle cx="200" cy="300" r="130" fill="#6d28d9" fill-opacity="0.2" filter="url(#softBlur3)" />
+
+  <!-- Mockup Window Browser -->
+  <g transform="translate(60, 50)">
+    <rect width="680" height="400" rx="14" fill="#120f20" stroke="#bfa6ff" stroke-opacity="0.18" stroke-width="1.5" />
+    
+    <!-- Top bar -->
+    <rect width="680" height="42" rx="14" fill="#18142c" />
+    <rect y="30" width="680" height="12" fill="#18142c" />
+    
+    <!-- Window controls -->
+    <circle cx="28" cy="21" r="5" fill="#ff5f56" opacity="0.7" />
+    <circle cx="46" cy="21" r="5" fill="#ffbd2e" opacity="0.7" />
+    <circle cx="64" cy="21" r="5" fill="#27c93f" opacity="0.7" />
+    <rect x="220" y="11" width="240" height="20" rx="10" fill="#0b0914" opacity="0.7" />
+    <text x="340" y="25" fill="#bfa6ff" opacity="0.6" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" text-anchor="middle">design-system.metrics.ui</text>
+
+    <!-- Main Content Area -->
+    <g transform="translate(30, 60)">
+      <!-- Top Metric Cards -->
+      <g transform="translate(0, 0)">
+        <!-- Card 1 -->
+        <rect width="195" height="70" rx="10" fill="#19152d" stroke="#bfa6ff" stroke-opacity="0.15" />
+        <text x="18" y="26" fill="#aaa5bc" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">COMPONENTES ATIVOS</text>
+        <text x="18" y="52" fill="#f6f4fa" font-family="'Syne', sans-serif" font-size="20" font-weight="700">48 UI Kits</text>
+        <circle cx="165" cy="35" r="14" fill="#bfa6ff" fill-opacity="0.15" />
+        
+        <!-- Card 2 -->
+        <rect x="212" width="195" height="70" rx="10" fill="#19152d" stroke="#bfa6ff" stroke-opacity="0.15" />
+        <text x="230" y="26" fill="#aaa5bc" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">CONFORMIDADE A11Y</text>
+        <text x="230" y="52" fill="#34d399" font-family="'Syne', sans-serif" font-size="20" font-weight="700">99.4%</text>
+        <circle cx="377" cy="35" r="14" fill="#10b981" fill-opacity="0.15" />
+
+        <!-- Card 3 -->
+        <rect x="424" width="195" height="70" rx="10" fill="#19152d" stroke="#bfa6ff" stroke-opacity="0.15" />
+        <text x="442" y="26" fill="#aaa5bc" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">DESIGN TOKENS</text>
+        <text x="442" y="52" fill="#c4a9ff" font-family="'Syne', sans-serif" font-size="20" font-weight="700">128 Vars</text>
+        <circle cx="589" cy="35" r="14" fill="#8b5cf6" fill-opacity="0.15" />
+      </g>
+
+      <!-- Chart and Component Showcase -->
+      <g transform="translate(0, 85)">
+        <!-- Left: Analytics Area Chart -->
+        <rect width="380" height="230" rx="12" fill="#17132a" stroke="#bfa6ff" stroke-opacity="0.12" />
+        <text x="20" y="30" fill="#f6f4fa" font-family="'Syne', sans-serif" font-size="13" font-weight="600">Performance do Sistema</text>
+        
+        <!-- Chart Grid Lines -->
+        <line x1="20" y1="70" x2="360" y2="70" stroke="#bfa6ff" stroke-opacity="0.07" stroke-dasharray="3,3" />
+        <line x1="20" y1="120" x2="360" y2="120" stroke="#bfa6ff" stroke-opacity="0.07" stroke-dasharray="3,3" />
+        <line x1="20" y1="170" x2="360" y2="170" stroke="#bfa6ff" stroke-opacity="0.07" stroke-dasharray="3,3" />
+        
+        <!-- Area Chart Path -->
+        <path d="M 30,170 Q 90,130 140,145 T 240,90 T 320,60 T 360,75 L 360,200 L 30,200 Z" fill="url(#chartGrad)" />
+        <path d="M 30,170 Q 90,130 140,145 T 240,90 T 320,60 T 360,75" fill="none" stroke="url(#lineGrad)" stroke-width="3" />
+        <circle cx="320" cy="60" r="5" fill="#ffffff" stroke="#8b5cf6" stroke-width="2" />
+
+        <!-- Right: Design Tokens Palette -->
+        <g transform="translate(398, 0)">
+          <rect width="222" height="230" rx="12" fill="#17132a" stroke="#bfa6ff" stroke-opacity="0.12" />
+          <text x="18" y="30" fill="#f6f4fa" font-family="'Syne', sans-serif" font-size="13" font-weight="600">Paleta de Lilás & Roxo</text>
+          
+          <rect x="18" y="50" width="38" height="38" rx="8" fill="#e4d9ff" />
+          <rect x="66" y="50" width="38" height="38" rx="8" fill="#c4a9ff" />
+          <rect x="114" y="50" width="38" height="38" rx="8" fill="#8b5cf6" />
+          <rect x="162" y="50" width="38" height="38" rx="8" fill="#6d28d9" />
+
+          <text x="18" y="115" fill="#aaa5bc" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">COMPONENTS PREVIEW</text>
+          <rect x="18" y="130" width="186" height="34" rx="17" fill="#8b5cf6" />
+          <text x="111" y="152" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Botão Primário</text>
+
+          <rect x="18" y="174" width="186" height="34" rx="17" fill="none" stroke="#bfa6ff" stroke-opacity="0.4" stroke-width="1.5" />
+          <text x="111" y="196" fill="#c4a9ff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" text-anchor="middle">Botão Secundário</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

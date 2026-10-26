@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Beatriz — Desenvolvedora & Designer</title>
+  <meta name="description" content="Portfólio profissional de Ana Beatriz. Estudante de Desenvolvimento de Sistemas com foco em design de interfaces modernas, estética minimalista e desenvolvimento front-end.">
+  <meta name="theme-color" content="#09080e">
+
+  <!-- Favicon com SVG inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23141124'/><text x='50' y='62' font-size='42' font-family='sans-serif' font-weight='bold' fill='%23bfa6ff' text-anchor='middle'>A</text></svg>">
+
+  <!-- Google Fonts: Syne (Display) & Plus Jakarta Sans (Texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Folhas de Estilo -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Efeitos de Fundo: Iluminação e Malha Sutil -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- ==================================================================
+       CABEÇALHO & MENU DE NAVEGAÇÃO
+       ================================================================== -->
+  <header class="header-nav" id="header-nav">
+    <div class="nav-wrapper">
+      <nav class="nav-pill">
+        <a href="#inicio" class="logo" aria-label="Voltar ao início">
+          <span class="logo-dot"></span>
+          <span>ana<span class="text-gradient">.dev</span></span>
+        </a>
+
+        <!-- Links Desktop -->
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre mim</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+          <li><a href="#contato" class="nav-link nav-cta">Vamos conversar</a></li>
+        </ul>
+
+        <!-- Botão Menu Mobile -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gaveta do Menu Mobile -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <a href="#inicio" class="nav-link mobile-link">Início</a>
+    <a href="#sobre" class="nav-link mobile-link">Sobre mim</a>
+    <a href="#projetos" class="nav-link mobile-link">Projetos</a>
+    <a href="#contato" class="nav-link mobile-link">Contato</a>
+  </div>
+
+  <main>
+    <!-- ==================================================================
+         SEÇÃO 1: INÍCIO (HERO)
+         ================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        <div class="hero-content fade-up">
+          
+          <!-- Badge de Status -->
+          <div class="status-badge">
+            <span class="status-pulse"></span>
+            <span id="hero-status">Disponível para novos projetos e oportunidades</span>
+          </div>
+
+          <!-- Título Principal com Nome e Assinatura -->
+          <h1 class="hero-title">
+            Design refinado com <br>
+            <span class="text-gradient">código elegante</span> & funcional.
+          </h1>
+
+          <!-- Descrição Breve -->
+          <p class="hero-description" id="hero-description">
+            Olá, me chamo Ana Beatriz. Sou estudante de Desenvolvimento de Sistemas unindo sensibilidade visual em UI/UX e desenvolvimento front-end com foco em performance, estética e usabilidade.
+          </p>
+
+          <!-- Ações Principais -->
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">
+              <span>Conhecer meus projetos</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contato" class="btn btn-secondary">
+              <span>Entrar em contato</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Badges de Tecnologias em Destaque -->
+          <div class="hero-badges-wrapper">
+            <p class="hero-badges-title">Tecnologias & Áreas de Foco</p>
+            <div class="hero-badges-row">
+              <span class="tech-badge">HTML5 Semântico</span>
+              <span class="tech-badge">CSS3 Moderno</span>
+              <span class="tech-badge">JavaScript (ES6+)</span>
+              <span class="tech-badge">UI/UX Design</span>
+              <span class="tech-badge">Design Responsivo</span>
+              <span class="tech-badge">Git & GitHub</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         SEÇÃO 2: SOBRE MIM
+         ================================================================== -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        
+        <div class="fade-up">
+          <span class="section-tag">01. Sobre mim</span>
+          <h2 class="section-title">Harmonia entre lógica e estética visual</h2>
+          <p class="section-subtitle">
+            Conheça mais sobre quem sou, minha dedicação aos estudos de tecnologia e as ferramentas que utilizo para criar interfaces envolventes.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Card de Perfil Visual -->
+          <aside class="profile-card fade-up delay-1">
+            <div class="profile-avatar-wrapper">
+              <img src="assets/images/avatar.svg" alt="Monograma e emblema de Ana Beatriz" class="profile-avatar-img">
+            </div>
+            <h3 class="profile-name" id="about-name">Ana Beatriz</h3>
+            <p class="profile-role" id="about-role">Desenvolvedora Front-end & UI Designer</p>
+
+            <ul class="profile-info-list">
+              <li class="profile-info-item">
+                <span class="info-label">Formação:</span>
+                <span class="info-value">Desenvolvimento de Sistemas</span>
+              </li>
+              <li class="profile-info-item">
+                <span class="info-label">Especialidade:</span>
+                <span class="info-value">Front-end & UI/UX</span>
+              </li>
+              <li class="profile-info-item">
+                <span class="info-label">Localização:</span>
+                <span class="info-value">Brasil</span>
+              </li>
+              <li class="profile-info-item">
+                <span class="info-label">Status:</span>
+                <span class="info-value" style="color: #34d399;">Ativa para Projetos</span>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Texto Sobre Mim e Habilidades -->
+          <div class="about-text-content fade-up delay-2">
+            <div id="about-paragraphs">
+              <!-- Os parágrafos são preenchidos dinamicamente pelo js/config.js -->
+              <p class="bio-paragraph">
+                Sou estudante de <strong>Desenvolvimento de Sistemas</strong> apaixonada pela convergência entre <strong>design de interfaces</strong> e <strong>código estruturado</strong>.
+              </p>
+              <p class="bio-paragraph">
+                Acredito que cada detalhe em um site conta uma história: desde a precisão dos espaçamentos e hierarquia tipográfica até a fluidez de uma transição suave. Meu objetivo é transformar ideias em produtos digitais agradáveis, rápidos e intuitivos.
+              </p>
+              <p class="bio-paragraph">
+                Dedico meu tempo a aprofundar conhecimentos em lógica de programação, boas práticas de front-end, prototipagem no Figma e acessibilidade web, sempre buscando entregar soluções de alto nível.
+              </p>
+            </div>
+
+            <!-- Grade de Habilidades -->
+            <div class="skills-wrapper">
+              <h4 class="skills-heading">
+                <span class="skill-pill-dot"></span>
+                <span>Habilidades & Tecnologias</span>
+              </h4>
+              <div class="skills-tags-container" id="skills-container">
+                <!-- Inserido dinamicamente via js/config.js -->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         SEÇÃO 3: PROJETOS
+         ================================================================== -->
+    <section class="projects-section" id="projetos">
+      <div class="container">
+        
+        <div class="fade-up">
+          <span class="section-tag">02. Galeria de Projetos</span>
+          <h2 class="section-title">Trabalhos em destaque</h2>
+          <p class="section-subtitle">
+            Uma seleção de aplicações e interfaces criadas com foco em estética minimalista, responsividade completa e código limpo.
+          </p>
+        </div>
+
+        <!-- Grade de Cards de Projetos -->
+        <!-- NOTA: Os dados e links são centralizados no arquivo js/config.js para fácil edição! -->
+        <div class="projects-grid" id="projects-container">
+          <!-- Gerado dinamicamente pelo script js/main.js a partir do js/config.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         SEÇÃO 4: CONTATO
+         ================================================================== -->
+    <section class="contact-section" id="contato">
+      <div class="container">
+        
+        <div class="fade-up">
+          <span class="section-tag">03. Contato</span>
+          <h2 class="section-title">Vamos criar algo incrível juntas?</h2>
+          <p class="section-subtitle">
+            Tem um projeto em mente, busca uma desenvolvedora dedicada ou deseja trocar experiências sobre tecnologia e design? Entre em contato pelos canais abaixo.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Canais Diretos de Contato -->
+          <div class="contact-channels fade-up delay-1" id="contact-channels">
+            <!-- Gerado a partir de js/config.js com os links configurados -->
+          </div>
+
+          <!-- Formulário de Contato com Validação Real -->
+          <div class="contact-form-wrapper fade-up delay-2">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Seu Nome</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Como posso te chamar?" required>
+                <div class="error-message" id="error-name">Por favor, informe seu nome.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Seu E-mail</label>
+                <input type="email" id="form-email" class="form-input" placeholder="exemplo@dominio.com" required>
+                <div class="error-message" id="error-email">Informe um endereço de e-mail válido.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Assunto</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Ex: Proposta de projeto / Oportunidade" required>
+                <div class="error-message" id="error-subject">Por favor, preencha o assunto.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Mensagem</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Conte um pouco sobre sua ideia, projeto ou proposta..." required></textarea>
+                <div class="error-message" id="error-message">Por favor, escreva sua mensagem.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Enviar Mensagem</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <p class="form-hint">
+                💡 <strong>Transparência:</strong> Como este portfólio não utiliza backend externo, ao clicar em enviar o seu aplicativo de e-mail padrão será aberto automaticamente com as informações preenchidas.
+              </p>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================================
+       RODAPÉ
+       ================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-copy">
+          <p>© <span id="current-year"></span> <strong>Ana Beatriz</strong> — Desenvolvido com HTML, CSS & JavaScript puro.</p>
+        </div>
+        <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo da página">
+          <span>Voltar ao topo</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Container de Toasts/Notificações -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts: Configuração centralizada e Lógica do site -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
